@@ -1,0 +1,30 @@
+
+GET http://localhost:8000/api/book
+
+###
+POST  http://localhost:8000/api/book
+Content-Type: application/json
+
+{
+    "title" : "Belajar Javascript Pemula",
+    "description" : "tutorial Javascript untuk pemula",
+    "author" : "eve",
+    "publish_date" : "2023-05-12"
+}
+
+###
+GET http://localhost:8000/api/book/1
+
+###
+PUT http://localhost:8000/api/book/4
+Content-Type: application/json
+
+{
+    "title" : "Belajar Python Pemula",
+    "description" : "tutorial Python untuk pemula",
+    "author" : "eve",
+    "publish_date" : "2023-12-12"
+}
+
+###
+DELETE http://localhost:8000/api/book/2
